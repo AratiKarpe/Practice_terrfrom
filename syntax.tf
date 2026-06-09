@@ -6,11 +6,11 @@ provider "aws" {
 resource "aws_instance" "webserver"{
   key_name = "sample"
   ami = "ami-0c6ac5f2fed2981b0 "
-  instance_type = "t3.micro "
+  instance_type = "t2.micro "
   vpc_security_group_ids =["sg-051c13ca487ff9c4f"]
  
   tags ={
-    Name = "webserver"
+    Name = "Webserver"
   }
 }
 #disable_api_termination = ""
