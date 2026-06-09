@@ -10,6 +10,6 @@ resource "aws_instance" "webserver" {
   vpc_security_group_ids = ["sg-051c13ca487ff9c4f"]
 
   tags = {
-    Name = "Webserver"
+    Name = "webserver"
   }
 }
