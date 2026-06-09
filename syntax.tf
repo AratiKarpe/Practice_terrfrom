@@ -1,19 +1,17 @@
 provider "aws" {
   region = "us-east-1"
   profile = "configs"
-  access_key = "my-access_key"
-  secrete_key = "my-secrete_key"
 }
 
 resource "aws_instance" "webserver"{
-  key_name =
-  ami =
-  instance_type =
-  vpc_security_group_ids =
-  disable_api_termination =
+  key_name = "sample"
+  ami = "ami-0c6ac5f2fed2981b0 "
+  instance_type = "t3.micro "
+  vpc_security_group_ids =["sg-051c13ca487ff9c4f"]
+ 
   tags ={
     Name = "webserver"
   }
 }
-
-aws configure --profile=configs
+#disable_api_termination = ""
+#aws configure --profile=configs
