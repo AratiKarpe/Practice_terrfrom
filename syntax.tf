@@ -30,7 +30,7 @@ resource "aws_security_group" "webserversg" {
 
 resource "aws_instance" "webserver" {
   ami           = var.this_ami
-  instance_type = var.This_instance_type
+  instance_type = var.this_instance_type
   key_name      = var.this_key_name
 
   vpc_security_group_ids = [
