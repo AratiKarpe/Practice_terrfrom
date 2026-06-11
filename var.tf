@@ -7,7 +7,7 @@ variable "this_ami" {
   default = "ami-0c6ac5f2fed2981b0"
 }
 
-variable This_instance_type" {
+variable "This_instance_type" {
   default = "t3.micro"
 
 }
